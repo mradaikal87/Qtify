@@ -1,0 +1,22 @@
+.navbar {
+  background-color: var(--color-primary);
+  height: 74px;
+  max-width: 100vw;
+  padding: 0px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feedbackBtn {
+  font-weight: 600 !important;
+  font-size: 18px !important;
+  background-color: #121212 !important;
+  color: #34c94b !important;
+  border-radius: 12px;
+  line-height: 100%;
+  letter-spacing: 0.25px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize !important;
+}
