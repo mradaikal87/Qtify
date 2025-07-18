@@ -6,8 +6,24 @@
   --color-white: #ffffff;
   /* You can define more here */
 }
-body{
-  background-color: var(--color-black) ;
+
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+
+body {
+  background-color: var(--color-black);
+  font-family: Poppins;
+}
+
+.MuiTypography-h1,
+.MuiTypography-h2,
+.MuiTypography-h3,
+.MuiTypography-h4,
+.MuiTypography-h5,
+.MuiTypography-h6,
+a,
+.p {
+  font-family: Poppins !important;
 }
 .App {
   text-align: center;
