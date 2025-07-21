@@ -1,8 +1,12 @@
+.card{
+      border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
 .cardImage {
   /* width: 159;
   height: 205; */
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  /* border-top-left-radius: 10px;
+  border-top-right-radius: 10px; */
 }
 .cardFollows {
   color: var(--color-white);
@@ -22,9 +26,9 @@
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-.cardActions {
+/* .cardActions {
   background-color: var(--color-black) !important ;
-}
+} */
 .songCategory {
   color: var(--color-white);
   font-family: Poppins;
@@ -33,4 +37,5 @@
   font-size: 14px !important;
   line-height: 100%;
   letter-spacing: 0px;
+  margin-top: 6px;
 }
