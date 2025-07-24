@@ -22,3 +22,15 @@
   color: #34c94b !important;
   text-transform: initial !important;
 }
+.gridslider .slick-track {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+
+}
+.slider {
+  /* your slider styles, or leave empty if not needed */
+}
+.gridItem{
+  width: 163px;
+}
