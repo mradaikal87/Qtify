@@ -42,6 +42,7 @@ export default function CardBox({ album }) {
         variant="h5"
         component="div"
         className={styles.songCategory}
+        style={{ marginTop: "10px" }}
       >
         {album?.title}
       </Typography>

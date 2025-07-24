@@ -31,10 +31,18 @@ a,
 button {
   font-family: Poppins !important;
 }
+.p {
+  color: #fff;
+}
 .App {
   text-align: center;
 }
-
+.MuiCollapse-entered{
+  background-color: var(--color-white);
+}
+.MuiCollapse-entered p{
+  color: var(--color-black);
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -65,7 +73,9 @@ button {
   display: flex;
   gap: 10px;
 }
-
+.css-1qltlow-MuiTabs-indicator {
+  background-color: #34c94b !important;
+}
 
 @keyframes App-logo-spin {
   from {
