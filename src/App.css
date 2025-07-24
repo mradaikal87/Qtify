@@ -27,7 +27,8 @@ body {
 .MuiTypography-h5,
 .MuiTypography-h6,
 a,
-.p {
+.p,
+button {
   font-family: Poppins !important;
 }
 .App {
@@ -59,6 +60,12 @@ a,
 .App-link {
   color: #61dafb;
 }
+
+.slick-track {
+  display: flex;
+  gap: 10px;
+}
+
 
 @keyframes App-logo-spin {
   from {

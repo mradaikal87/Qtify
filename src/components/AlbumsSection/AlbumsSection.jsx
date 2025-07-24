@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
-import { Box, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import CardBox from "../CardBox/CardBox";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import styles from "./AlbumsSection.module.css";
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function AlbumsSection({ fetchUrl, title }) {
@@ -58,16 +59,21 @@ export default function AlbumsSection({ fetchUrl, title }) {
       <div
         style={{
           position: "absolute",
-          right: -25,
+          right: 8,
           top: "40%",
           zIndex: 2,
+             background: "#34c94b",
           cursor: "pointer",
           fontSize: "24px",
           color: "white",
+          width: "26px",
+          height: "26px",
+          borderRadius: "53px",
+            padding: "6px 2px 6px 14px",
         }}
         onClick={onClick}
       >
-        <FontAwesomeIcon icon={faAngleLeft} />
+        <FontAwesomeIcon icon={faAngleRight} />
       </div>
     );
   };
@@ -81,15 +87,18 @@ export default function AlbumsSection({ fetchUrl, title }) {
     arrows: true,
     afterChange: (index) => setCurrentSlide(index),
     prevArrow: <CustomNextArrow />,
-    nextArrow: <CustomPrevArrow />,
+    nextArrow: <CustomPrevArrow className={styles.nextArrow} />,
   };
 
   return (
     <Box sx={{ background: "#111", padding: 2, borderRadius: "10px" }}>
+        <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
       <Typography variant="h5" sx={{ color: "#fff", marginBottom: 2 }}>
         {title}
       </Typography>
-      <Slider {...settings}>
+      <Button className={styles.showAllbtn}>Show all </Button>
+      </Box>
+      <Slider {...settings} className={styles.slider}>
         {albumdata.map((album, index) => (
           <CardBox key={index} album={album} />
         ))}
